@@ -9,9 +9,10 @@ export default {
             colors: {
                 'footer-gray': '#252525',
                 'footer-gray-light': '#AAAAAA',
-                'header-beige': '#FFF7ED',
+                'body-beige': '#FFF7ED',
                 'header-gray': '#4D4D4D',
-                'button-orange': '#FF8C38'
+                'primary-orange': '#FF8C38',
+                'secondary-orange': '#FFCC8D'
             },
             backgroundImage: {
                 'hero-image': "url('./src/assets/images/hero_img_2.jpg')"

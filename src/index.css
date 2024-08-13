@@ -44,11 +44,11 @@ body {
 }
 
 /* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
+/*img,*/
+/*picture {*/
+/*  max-width: 100%;*/
+/*  display: block;*/
+/*}*/
 
 /* Make form elements easier to work with */
 input,

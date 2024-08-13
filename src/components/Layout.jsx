@@ -4,9 +4,9 @@ import {Outlet} from 'react-router-dom';
 
 export default function Layout() {
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col min-h-screen">
             <Header/>
-            <div className="grow">{<Outlet/>}</div>
+            <main className="grow bg-body-beige">{<Outlet/>}</main>
             <Footer/>
         </div>
     )
