@@ -79,6 +79,8 @@ nav > a {
   }
 }
 
+
+/* Custom classes */
 .simple {
   background-color: #E17654;
 }
@@ -90,3 +92,8 @@ nav > a {
 .luxury {
   background-color: #161616;
 }
+
+.nav-link {
+  @apply hover:underline hover:underline-offset-4 hover:text-black;
+}
+

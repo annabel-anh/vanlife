@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TypePill from './TypePill.jsx';
 import {Link} from 'react-router-dom';
+import Skeleton from 'react-loading-skeleton'
 
 export default function VanCard({van}) {
     const {id, name, price, description, imageUrl, type} = van
