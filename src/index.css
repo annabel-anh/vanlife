@@ -41,14 +41,15 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   font-family: "Inter", sans-serif;
+  color: #161616;
 }
 
 /* Make images easier to work with */
-/*img,*/
-/*picture {*/
-/*  max-width: 100%;*/
-/*  display: block;*/
-/*}*/
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
 
 /* Make form elements easier to work with */
 input,
@@ -76,4 +77,16 @@ nav > a {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.simple {
+  background-color: #E17654;
+}
+
+.rugged {
+  background-color: #115E59;
+}
+
+.luxury {
+  background-color: #161616;
 }

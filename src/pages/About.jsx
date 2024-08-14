@@ -9,7 +9,7 @@ function About() {
             <div className="mx-7 my-12 lg:mx-32 2xl:mx-96 flex flex-col gap-12">
                 {/*About content*/}
                 <section>
-                    <h2 className="font-bold text-3xl">Don’t squeeze in a sedan when you could relax in a van.</h2>
+                    <h1 className="font-bold text-3xl">Don’t squeeze in a sedan when you could relax in a van.</h1>
                     <p className="mt-7 font-medium">
                         Our mission is to enliven your road trip with the perfect travel van rental. Our vans are
                         recertified before each trip to ensure your travel plans can go off without a hitch.
