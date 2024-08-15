@@ -1,8 +1,12 @@
 import React from "react";
+import {Outlet} from 'react-router-dom';
 
 
 export default function Dashboard() {
     return (
-        <h1>Dashboard host here</h1>
+        <>
+            <h1>Dashboard host here</h1>
+            <Outlet/>
+        </>
     )
 }

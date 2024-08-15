@@ -42,11 +42,12 @@ export default function VanDetail() {
     )
 
     return (
-            <div className="mx-7 mb-20 mt-10 flex flex-col gap-10 2xl:mx-32">
-                <Link to="/vanlife/src/pages/Vans/Vans">
+            <div className="content-container flex flex-col gap-10">
+                <Link to="/vans">
                     <p className="font-medium hover:underline underline-offset-4">
-                            <span className="mr-3"><FontAwesomeIcon icon={faArrowLeft}
-                                                                    className="text-[#858585]"/></span>
+                        <span className="mr-3">
+                            <FontAwesomeIcon icon={faArrowLeft} className="text-[#858585]"/>
+                        </span>
                         Back to all vans
                     </p>
                 </Link>

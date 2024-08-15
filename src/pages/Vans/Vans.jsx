@@ -18,7 +18,7 @@ function Vans() {
 
 
     return (
-        <div className="mx-7 my-20 2xl:mx-32">
+        <div className="content-container">
             <h1 className="font-bold text-[32px]">Explore our van options</h1>
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-14">
                 {loading ? 'loading...' : vans.map(van => <VanCard van={van} key={van.id}/>)}

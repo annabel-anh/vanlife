@@ -20,7 +20,7 @@ function Home() {
                     make your perfect road trip.
                 </p>
                 <button className="bg-primary-orange rounded-md font-bold py-3 w-full md:w-64">
-                    <Link to="/Vans/Vans">Find your van</Link>
+                    <Link to={'/vans'}>Find your van</Link>
                 </button>
             </div>
         </div>
