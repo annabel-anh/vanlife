@@ -10,7 +10,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Margins */
@@ -23,7 +23,7 @@ h5,
 p,
 figure,
 picture {
-  margin: 0;
+    margin: 0;
 }
 
 h1,
@@ -33,22 +33,22 @@ h4,
 h5,
 h6,
 p {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 /* Set up the body */
 body {
-  min-height: 100vh;
-  overflow-x: hidden;
-  font-family: "Inter", sans-serif;
-  color: #161616;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    color: #161616;
 }
 
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 /* Make form elements easier to work with */
@@ -56,47 +56,54 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 nav > a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /* Remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
+    html:focus-within {
+        scroll-behavior: auto;
+    }
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 
 /* Custom classes */
+/* filter pills */
 .simple {
-  @apply bg-simple-pill;
+    @apply bg-simple-pill;
 }
 
 .rugged {
-  @apply bg-rugged-pill;
+    @apply bg-rugged-pill;
 }
 
 .luxury {
-  @apply bg-luxury-pill;
+    @apply bg-luxury-pill;
 }
 
+/*Nav bar*/
 .nav-link {
-  @apply hover:underline hover:underline-offset-4 hover:text-black;
+    @apply font-semibold text-header-gray hover:underline hover:underline-offset-4 hover:text-black;
 }
 
+.active-link {
+    @apply underline underline-offset-4 text-black;
+}
+
+/*main content container*/
 .content-container {
-  @apply mx-7 mb-20 mt-10 2xl:mx-32;
+    @apply mx-7 mb-20 mt-10 2xl:mx-32;
 }

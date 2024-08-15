@@ -24,7 +24,7 @@ function About() {
                 {/*Call to action*/}
                 <aside className="bg-secondary-orange p-9 rounded-md">
                     <p className="font-bold text-2xl">Your destination is waiting. <br/> Your van is ready.</p>
-                    <button className="mt-7 bg-black text-white font-bold px-6 py-3 rounded-xl">
+                    <button className="mt-7 bg-black hover:bg-black/90 text-white font-bold px-6 py-3 rounded-xl">
                         <Link to={"/vans"}>Explore our vans</Link>
                     </button>
                 </aside>

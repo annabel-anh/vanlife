@@ -19,7 +19,7 @@ function Home() {
                     Add adventure to your life by joining the #vanlife movement. Rent the perfect van to
                     make your perfect road trip.
                 </p>
-                <button className="bg-primary-orange rounded-md font-bold py-3 w-full md:w-64">
+                <button className="bg-primary-orange hover:bg-primary-orange/90 rounded-md font-bold py-3 w-full md:w-64">
                     <Link to={'/vans'}>Find your van</Link>
                 </button>
             </div>
