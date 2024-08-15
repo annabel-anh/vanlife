@@ -9,8 +9,8 @@ function About() {
             <div className="mx-7 my-12 lg:mx-32 2xl:mx-96 flex flex-col gap-12">
                 {/*About content*/}
                 <section>
-                    <h1 className="font-bold text-3xl">Don’t squeeze in a sedan when you could relax in a van.</h1>
-                    <p className="mt-7 font-medium">
+                    <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
+                    <p className="font-medium">
                         Our mission is to enliven your road trip with the perfect travel van rental. Our vans are
                         recertified before each trip to ensure your travel plans can go off without a hitch.
                         <br/>(Hitch costs extra 😉)
@@ -24,9 +24,11 @@ function About() {
                 {/*Call to action*/}
                 <aside className="bg-secondary-orange p-9 rounded-md">
                     <p className="font-bold text-2xl">Your destination is waiting. <br/> Your van is ready.</p>
-                    <button className="mt-7 bg-black hover:bg-black/90 text-white font-bold px-6 py-3 rounded-xl">
-                        <Link to={"/vans"}>Explore our vans</Link>
-                    </button>
+                    <Link to={"/vans"}>
+                        <button className="mt-7 bg-black hover:bg-black/90 text-white font-bold px-6 py-3 rounded-xl">
+                            Explore our vans
+                        </button>
+                    </Link>
                 </aside>
             </div>
         </>

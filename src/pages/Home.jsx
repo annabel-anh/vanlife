@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from '../components/Footer.jsx';
-import Header from '../components/Header.jsx';
 import {Link} from 'react-router-dom';
 
 function Home() {
@@ -19,9 +17,11 @@ function Home() {
                     Add adventure to your life by joining the #vanlife movement. Rent the perfect van to
                     make your perfect road trip.
                 </p>
-                <button className="bg-primary-orange hover:bg-primary-orange/90 rounded-md font-bold py-3 w-full md:w-64">
-                    <Link to={'/vans'}>Find your van</Link>
-                </button>
+                <Link to={'/vans'}>
+                    <button className="bg-primary-orange hover:bg-primary-orange/90 rounded-md font-bold py-3 w-full md:w-64">
+                        Find your van
+                    </button>
+                </Link>
             </div>
         </div>
 

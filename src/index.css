@@ -13,28 +13,6 @@
     box-sizing: border-box;
 }
 
-/* Margins */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-figure,
-picture {
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    font-weight: 400;
-}
 
 /* Set up the body */
 body {
@@ -94,6 +72,14 @@ nav > a {
     @apply bg-luxury-pill;
 }
 
+.normal-pill {
+    @apply rounded-md px-5 py-[6px]
+}
+
+.small-pill {
+    @apply rounded text-xs px-3 py-1;
+}
+
 /*Nav bar*/
 .nav-link {
     @apply font-semibold text-header-gray hover:underline hover:underline-offset-4 hover:text-black;
@@ -106,4 +92,10 @@ nav > a {
 /*main content container*/
 .content-container {
     @apply mx-7 mb-20 mt-10 2xl:mx-32;
+}
+
+@layer base {
+    h1 {
+        @apply text-[32px] font-bold leading-none mb-8;
+    }
 }

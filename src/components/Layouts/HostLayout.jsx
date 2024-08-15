@@ -5,9 +5,10 @@ import {Outlet} from 'react-router-dom';
 
 export default function HostLayout() {
     const links = [
-        {to: '/host', label: 'Dashboard'},
-        {to: '/host/income', label: 'Income'},
-        {to: '/host/reviews', label: 'Reviews'}
+        {to: '.', label: 'Dashboard'},
+        {to: 'income', label: 'Income'},
+        {to: 'vans', label: 'Vans'},
+        {to: 'reviews', label: 'Reviews'}
     ]
 
     return (

@@ -1,9 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link, useParams} from 'react-router-dom';
 import TypePill from '../../components/TypePill.jsx';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
-import Skeleton from 'react-loading-skeleton'
+import BackArrow from '../../components/BackArrow.jsx';
 
 export default function VanDetail() {
     const {id} = useParams()
@@ -14,6 +12,7 @@ export default function VanDetail() {
         fetch(`/api/vans/${id}`)
             .then(res => res.json())
             .then(data => {
+                console.log(data.vans)
                 setVan(data.vans)
                 setLoading(false)
             })
@@ -27,7 +26,7 @@ export default function VanDetail() {
             <div className="flex flex-col gap-5">
                 <TypePill type={van.type}/>
                 <div className="flex flex-col gap-[10px]">
-                    <h1 className="font-bold text-[32px]">{van.name}</h1>
+                    <h1 className="mb-0">{van.name}</h1>
                     <p className="font-bold text-2xl">${van.price}<span
                         className="font-medium text-[20px]">/day</span>
                     </p>
@@ -43,13 +42,8 @@ export default function VanDetail() {
 
     return (
             <div className="content-container flex flex-col gap-10">
-                <Link to="/vans">
-                    <p className="font-medium hover:underline underline-offset-4">
-                        <span className="mr-3">
-                            <FontAwesomeIcon icon={faArrowLeft} className="text-[#858585]"/>
-                        </span>
-                        Back to all vans
-                    </p>
+                <Link to={'..'} relative={'path'}>
+                    <BackArrow/>
                 </Link>
                 {loading ? 'loading...' : vanDetailElement}
             </div>

@@ -10,7 +10,7 @@ export default function Navbar({ links, className }) {
                     to={link.to}
                     key={index}
                     className={({isActive}) => "nav-link" + (isActive ? " active-link" : "")}
-                    end = {link.label === 'Dashboard'}
+                    end = {link.to === '.'}
                 >
                     {link.label}
                 </NavLink>
