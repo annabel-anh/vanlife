@@ -82,7 +82,7 @@ nav > a {
 
 /*Nav bar*/
 .nav-link {
-    @apply font-semibold text-header-gray hover:underline hover:underline-offset-4 hover:text-black;
+    @apply font-semibold text-custom-gray hover:underline hover:underline-offset-4 hover:text-black;
 }
 
 .active-link {
@@ -98,4 +98,12 @@ nav > a {
     h1 {
         @apply text-[32px] font-bold leading-none mb-8;
     }
+}
+
+.detail-label {
+    @apply font-bold text-sm;
+}
+
+.detail-info {
+    @apply font-medium text-sm;
 }

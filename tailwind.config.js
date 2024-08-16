@@ -10,7 +10,7 @@ export default {
                 'footer-gray': '#252525',
                 'footer-gray-light': '#AAAAAA',
                 'body-beige': '#FFF7ED',
-                'header-gray': '#4D4D4D',
+                'custom-gray': '#4D4D4D',
                 'primary-orange': '#FF8C38',
                 'secondary-orange': '#FFCC8D',
                 'tertiary-orange': '#FFEAD0',

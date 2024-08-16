@@ -19,7 +19,7 @@ export default function VanDetail() {
     }, [id])
 
     const vanDetailElement = (
-        <div className="flex flex-col gap-12 xl:flex-row">
+        <div className="flex flex-col gap-12 xl:flex-row mt-9">
             {/*Van image*/}
             <img src={van.imageUrl} alt={`${van.name} van`} className="rounded-md"/>
             {/*Van detail*/}
@@ -41,11 +41,11 @@ export default function VanDetail() {
     )
 
     return (
-            <div className="content-container flex flex-col gap-10">
+            <div className="content-container">
                 <Link to={'..'} relative={'path'}>
                     <BackArrow/>
                 </Link>
-                {loading ? 'loading...' : vanDetailElement}
+                {loading ? <p className="mt-9">looking for the van...</p> : vanDetailElement}
             </div>
     )
 }

@@ -36,11 +36,15 @@ export default function HostVanDetail() {
             <Link to={'..'} relative={'path'}>
                 <BackArrow/>
             </Link>
-            <section className="bg-white p-4 rounded-md shadow-sm mt-9">
-                {loading ? <p className={'mt-9'}>looking for the van...</p> : hostVanDetailElement}
-                <Navbar links={links} className={"my-7"}/>
-                <Outlet/>
-            </section>
+            {
+                loading ?
+                    <p className="mt-9">looking for the van...</p> :
+                    <section className="bg-white p-4 rounded-md shadow-sm mt-9">
+                        {hostVanDetailElement}
+                        <Navbar links={links} className={"my-7"}/>
+                        <Outlet context={currentVan}/>
+                    </section>
+            }
         </>
 
     )
