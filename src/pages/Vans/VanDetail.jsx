@@ -12,7 +12,6 @@ export default function VanDetail() {
         fetch(`/api/vans/${id}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data.vans)
                 setVan(data.vans)
                 setLoading(false)
             })

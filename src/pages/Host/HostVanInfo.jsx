@@ -7,10 +7,10 @@ export default function HostVanInfo() {
 
     return (
         <div className={"flex flex-col gap-4"}>
-            <p className={'detail-info'}><span className="detail-label">Name:</span> {currentVan.name}</p>
-            <p className={'detail-info'}><span className="detail-label">Category:</span> {currentVan.type}</p>
-            <p className={'detail-info'}><span className="detail-label">Description:</span> {currentVan.description}</p>
-            <p className={"detail-info"}><span className="detail-label">Visibility:</span> Public</p>
+            <h4 className={'detail-info'}><span className="detail-label">Name:</span> {currentVan.name}</h4>
+            <h4 className={'detail-info'}><span className="detail-label">Type:</span> {currentVan.type}</h4>
+            <h4 className={'detail-info'}><span className="detail-label">Description:</span> {currentVan.description}</h4>
+            <h4 className={"detail-info"}><span className="detail-label">Visibility:</span> Public</h4>
         </div>
     )
 }

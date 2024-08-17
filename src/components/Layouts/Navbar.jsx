@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Navbar({ links, className }) {
     return (
-        <nav className={`flex gap-7 max-[400px]:gap-4 ${className}`}>
+        <nav className={`flex gap-7  max-[400px]:gap-4 ${className}`}>
             {links.map((link, index) =>
                 <NavLink
                     to={link.to}

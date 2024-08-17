@@ -60,17 +60,22 @@ nav > a {
 
 /* Custom classes */
 /* filter pills */
-.simple {
-    @apply bg-simple-pill;
+.filter-pill {
+    @apply w-fit font-semibold text-custom-gray bg-tertiary-orange;
 }
 
-.rugged {
-    @apply bg-rugged-pill;
+.simple-hover\:simple:hover, .simple-active {
+    @apply bg-simple-pill text-tertiary-orange;
 }
 
-.luxury {
-    @apply bg-luxury-pill;
+.luxury-hover\:luxury:hover, .luxury-active {
+    @apply bg-luxury-pill text-tertiary-orange;
 }
+
+.rugged-hover\:rugged:hover, .rugged-active {
+    @apply bg-rugged-pill text-tertiary-orange;
+}
+
 
 .normal-pill {
     @apply rounded-md px-5 py-[6px]

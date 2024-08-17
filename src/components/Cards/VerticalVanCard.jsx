@@ -8,9 +8,11 @@ export default function VerticalVanCard({van}) {
 
     return (
         <div className="flex flex-col gap-3 h-full group">
-            <div className="h-4/5 overflow-hidden">
-                <img src={imageUrl} alt="van"
-                     className="object-cover h-full w-full rounded-md group-hover:scale-110 duration-200 ease-in"/>
+            <div className="h-4/5 overflow-hidden rounded-md">
+                <img src={imageUrl}
+                     alt="van"
+                     className="object-cover h-full w-full group-hover:scale-110 duration-200 ease-in"
+                />
             </div>
             <div className="flex flex-col sm:flex-row">
                 <p className="font-semibold text-lg sm:text-xl whitespace-nowrap overflow-hidden overflow-ellipsis">{name}</p>
