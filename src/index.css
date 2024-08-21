@@ -60,20 +60,24 @@ nav > a {
 
 /* Custom classes */
 /* filter pills */
-.filter-pill {
-    @apply w-fit font-semibold text-custom-gray bg-tertiary-orange;
+.van-type {
+    @apply w-fit font-semibold text-custom-gray bg-tertiary-orange hover:text-tertiary-orange;
 }
 
-.simple-hover\:simple:hover, .simple-active {
-    @apply bg-simple-pill text-tertiary-orange;
+.van-type.selected {
+    @apply text-tertiary-orange;
 }
 
-.luxury-hover\:luxury:hover, .luxury-active {
-    @apply bg-luxury-pill text-tertiary-orange;
+.van-type.simple:hover, .van-type.simple.selected {
+    @apply bg-simple-pill;
 }
 
-.rugged-hover\:rugged:hover, .rugged-active {
-    @apply bg-rugged-pill text-tertiary-orange;
+.van-type.luxury:hover, .van-type.luxury.selected {
+    @apply bg-luxury-pill;
+}
+
+.van-type.rugged:hover, .van-type.rugged.selected {
+    @apply bg-rugged-pill;
 }
 
 

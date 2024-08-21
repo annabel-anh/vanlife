@@ -34,7 +34,7 @@ export default function HostVanDetail() {
     return (
         <>
             <Link to={'..'} relative={'path'}>
-                <BackArrow/>
+                <BackArrow>Back to all vans</BackArrow>
             </Link>
             {
                 loading ?

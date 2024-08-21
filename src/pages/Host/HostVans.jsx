@@ -25,7 +25,7 @@ export default function HostVans() {
                 <section className="flex flex-col gap-4">
                     {hostVans.map(van => {
                         return (
-                            <Link to={`/host/vans/${van.id}`} key={van.id}>
+                            <Link to={`${van.id}`} key={van.id}>
                                 <div className="bg-white p-4 rounded-md h-[100px] shadow-sm">
                                     <HorizontalVanCard van={van}/>
                                 </div>

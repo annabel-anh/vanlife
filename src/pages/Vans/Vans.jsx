@@ -32,7 +32,11 @@ function Vans() {
             <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-10">
                 {loading ? 'loading...' : displayedVans.map(van => {
                     return (
-                        <Link to={`/vans/${van.id}`} key={van.id}>
+                        <Link
+                            to={`${van.id}`}
+                            key={van.id}
+                            state={{search: `${searchParams.toString()}`, type: typeFilter}}
+                        >
                             <VerticalVanCard van={van}/>
                         </Link>
                     )

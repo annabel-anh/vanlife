@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Link, useParams} from 'react-router-dom';
+import {Link, useLocation, useParams} from 'react-router-dom';
 import TypePill from '../../components/TypePill.jsx';
 import BackArrow from '../../components/BackArrow.jsx';
 
@@ -7,6 +7,10 @@ export default function VanDetail() {
     const {id} = useParams()
     const [van, setVan] = useState({})
     const [loading, setLoading] = useState(true);
+    const location = useLocation()
+    const search = location.state?.search || ''
+    const type = location.state?.type || 'all'
+
 
     useEffect(() => {
         fetch(`/api/vans/${id}`)
@@ -23,7 +27,7 @@ export default function VanDetail() {
             <img src={van.imageUrl} alt={`${van.name} van`} className="rounded-md"/>
             {/*Van detail*/}
             <div className="flex flex-col gap-5">
-                <TypePill type={van.type}/>
+                <TypePill type={van.type} selected/>
                 <div className="flex flex-col gap-[10px]">
                     <h1 className="mb-0">{van.name}</h1>
                     <p className="font-bold text-2xl">${van.price}<span
@@ -38,11 +42,10 @@ export default function VanDetail() {
             </div>
         </div>
     )
-
     return (
             <div className="content-container">
-                <Link to={'..'} relative={'path'}>
-                    <BackArrow/>
+                <Link to={search ? `../?${search}` : '..'} relative={'path'}>
+                    <BackArrow>{`Back to ${type} vans`}</BackArrow>
                 </Link>
                 {loading ? <p className="mt-9">looking for the van...</p> : vanDetailElement}
             </div>

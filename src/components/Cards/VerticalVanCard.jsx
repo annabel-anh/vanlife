@@ -20,7 +20,7 @@ export default function VerticalVanCard({van}) {
                     className="text-xs">/day</span>
                 </p>
             </div>
-            <TypePill type={type}/>
+            <TypePill type={type} selected/>
         </div>
 
     )
