@@ -7,7 +7,7 @@
 VanLife Rental App is a web application that allows users to rent travel vans for their road trips or to host their 
 vans. The app provides a variety of vans with different features and prices, catering to various travel needs. **Not 
 all features of this web application have been implemented. The main purpose of this project is to learn 
-react-router-dom.**
+React Router.**
 
 ## Features
 
