@@ -20,7 +20,7 @@ export default {
                 'black':'#161616'
             },
             backgroundImage: {
-                'hero-image': "url('./src/assets/images/hero_img_2.jpg')"
+                'hero-image': "url('public/assets/images/hero_img_2.jpg')"
             }
         },
     },

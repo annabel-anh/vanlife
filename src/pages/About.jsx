@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 function About() {
     return (
         <>
-            <img src="src/assets/images/about_img.jpg" alt="camping" className="h-60 w-full object-cover md:h-96"/>
+            <img src="../../public/assets/images/about_img.jpg" alt="camping" className="h-60 w-full object-cover md:h-96"/>
 
             <div className="mx-7 my-12 lg:mx-32 2xl:mx-96 flex flex-col gap-12">
                 {/*About content*/}
